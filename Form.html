@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <h1>Form Tag</h1>
+
+
+    <div class="main">
+            <div class="main2">
+                Main2
+            </div>
+            <div class="main3">
+                Box
+
+            </div>
+        </div>
+        
+        <p>is simple dummy test of the is simple dummy test of the  <span class="text1" >printing and types printing and types</span>is simple dummy test of the is simple dummy test of the<span id="txt-id">printing and types</span></p>
+    
+    <hr>
+    <h1>ຟອມລົງທະບຽນ</h1>
+    <h2>ຟອມລົງທະບຽນ2</h2>
+    <hr>
+
+    <form action="Form.html" enctype="multipart/form-data" method="get">
+        <fieldset>
+            <legend style="font-size: 20px; color:blue; font-weight: bold;">ຟອມລົງທະບຽນ</legend>
+            <label for="user_name"; class="text1">ຊື່ຜູ້ໃຊ້</label><br>
+            <input type="text" name="username" id="user_name" placeholder="ປ້ອນຊື່ຜູ້ໃຊ້" required>
+            <br>
+
+
+            <label for="User_Password">ລະຫັດຜ່ານ</label><br>
+            <input type="password" name="userpassword" id="User_Password" placeholder="ປ້ອນລະຫັດຜ່ານ" required>
+            <br>
+
+
+            <label for="tel">ເບິໂທ</label><br>
+            <input type="number" name="tel" id="tel">
+            <br>
+            
+            <!--ເລືອກໄດ້ອັນດຽວ-->
+            <label for="sex">ເພດ:</label><br>
+            <input type="radio" name="sex" id=""> ຊາຍ
+            <input type="radio" name="sex" id="">ຍິງ
+            <input type="radio" name="sex" id="">ບໍ່ລະບຸ
+
+            <hr>
+
+            <label for="User_Password">ລະຫັດຜ່ານ 2</label><br>
+            <input type="password" name="userpassword" id="User_Password" placeholder="ປ້ອນລະຫັດຜ່ານ">
+            <br>
+            
+            <!--Bad ເລືອກໄດ້ຫຼາຍກວ່າ1-->
+            <label for="sex">ເພດ:</label><br>
+            <input type="radio" name="Male" id=""> ຊາຍ
+            <input type="radio" name="Famale" id="">ຍິງ
+            <input type="radio" name="donno" id="">ບໍ່ລະບຸ
+            <br>
+            <label for="skill">ຄວາມສາມາດ:</label><br>
+            <input type="checkbox" name="html" value="set-html" id="">html <br>
+            <input type="checkbox" name="css" value="set-css" id="">css <br>
+            <input type="checkbox" name="javascript" value="set-javascript" id="">javascript <br>
+            <input type="checkbox" name="flutter" value="set-flutter" id="">flutter
+            <hr>
+
+
+            <label for="skill2">ຄວາມສາມາດ2</label>
+            <select name="skill" id="skill2">
+                <option>--ເລືອກຄວາມສາມາດ--</option>
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="javascript">javascript</option>
+                <option value="flutter">flutter</option>
+            </select>
+            <br>
+            <br>
+            <hr>
+            <label for="">ອັບໂຫຼດຮູບພາບ</label>
+            <br>
+            <input type="file" name="fileUpload" id="Upload-img">
+            <hr>
+            <label for="date">ວັນທີເດືອນປີ</label><br>
+            <input type="date" name="date" id="date">
+            <br>
+            <hr>
+            
+            <hr>
+            <label for="">ລາຍລະອຽດ:</label>
+            <textarea name="detail" id="" cols="80" rows="10"></textarea>
+            <hr>
+            
+            
+            
+            
+
+
+            <hr>
+            <input type="button" value="ບັນທຶກ">
+            <input type="submit" value="save">
+            <input type="reset" value="reset">
+            
+        </fieldset>
+    </form>
+</body>
+
+</html>

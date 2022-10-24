@@ -1,0 +1,71 @@
+a{
+    /*link line out*/
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(106, 253, 250);
+    font-family: 'Phetsarath OT';
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.form-register{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding-top: 30px;
+    position: relative;
+    text-align: center;
+    width: 350px;
+    height: 600px;
+}
+
+.form-input{
+    border: 2px solid rgb(205, 205, 205);
+    border-radius: 4px;
+    width: 280px;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.form-input-select{
+    border: 2px solid rgb(205, 205, 205);
+    border-radius: 4px;
+    width: 80px;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.text-left{
+    position: absolute;
+    text-align: left;
+    left: 20px;
+}
+
+.button-register{
+    border: 0px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(237, 48, 48);
+    margin-bottom: 10px;
+}
+
+.aling-left{
+    text-align: left;
+    padding-left: 25px;
+    padding-bottom: 5px;
+}
+
+.text{
+    font-size: 12px;
+
+}

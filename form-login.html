@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    
+    <div  class="main">
+        <form action="#">
+        <div class="form-login">
+            <img src="images/Ryujin.webp" class="img" alt="">
+            <h3>ຟອມເຂົ້າສູ່ລະບົບ</h3>
+            <input type="text" name="username" class="form-input" id="" placeholder="ຊື່ຜູ້ໃຊ້"><br>
+            <input type="password" name="userpassword" class="form-input" id="" placeholder="ປ້ອນລະຫັດຜ່ານ"><br>
+            <div class="text-rm">
+                
+                <!--if not add <Id"?" like For"?""> when you click at name of checkbox will not tick-->
+                <span class="text-left">
+                    <input type="checkbox" name="remember" id="remember"> 
+                    <label for="remember">ຈື່ຂ້ອຍໄວ້ໃນລະບົບ</label>      
+                </span>
+
+                <span class="text-right">
+                        <a href="form-register.html">ລົງທະບຽນ!</a>
+                </span>
+            <script></script>
+            </div>
+        <div class="feedback">
+            <botton class="btn">Submit</botton>
+            <script>
+                var btn = document.querySelector(".btn");
+                var position;
+                btn.addEventListener("mouseover", function() {
+                    position ? (position = 0) : (position = 150);
+                    btn.style.transform = 'transform(${position}px,0px)';
+                    btn.style.transition = "all 0.3s ease";
+                });
+            </script>
+        </div>
+            <input type="submit" value="ເຂົ້າສູ່ລະບົບ" class="button-login">
+            
+            </div>
+    </form>
+    </div>
+    
+</body>
+</html>

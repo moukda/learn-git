@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Register</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+    <!--hack code you for create 'div' just key .nameclass and #nameid  It will create div that on class or id-->
+    <div class="main">
+        <form action="" method="get">
+        <div class="form-register">
+            <h3>ຟອມສະໜັກສະມາຊິກ</h3>
+            <input type="text" name="name" class="form-input" style="width: 125px;" placeholder="ຊື່">
+            <input type="text" name="last_name" class="form-input" style="width: 125px;" placeholder="ນາມສະກຸນ"><br>
+            <div class="aling-left">
+                <label for="gender">ເພດ:</label>
+
+                <input type="radio" name="gender" value="men" id="men" checked> 
+                <label for="men">ຊາຍ</label>
+
+                <input type="radio" name="gender" value="women" id="women"> 
+                <label for="women">ຍິງ</label>
+            </div>
+
+            <div class="aling-left">
+                <label for="date">ວັນເດືອນປີເກິດ:</label>
+                <input type="date" name="date" id="date" class="form-input" style="width: 150px;">
+            </div>
+
+            <div class="aling-left">
+                <label for="skill">ຄວາມສາມາດ:</label>
+                <select name="skill" id="skill" class="form-input-select">
+                    <option value="">--ເລືອກສາມສາມາດ--</option>
+                    <option value="html">ພາສາ html</option>
+                    <option value="css">ພາສາ css</option>
+                    <option value="js">ພາສາ js</option>
+                </select>
+            </div>
+            <input type="text" name="username" class="form-input" placeholder="ຊື່ຜູ້ໃຊ້"><br>
+            <input type="password" name="userpassword" class="form-input" placeholder="ປ້ອນລະຫັດຜ່ານ"><br>
+            <input type="password" name="userpassword2" class="form-input" placeholder="ຢືນຢັນລະຫັດຜ່ານ"><br>
+        
+            <div class="aling-left">
+                <label for="address">ທີ່ຢູ່:</label><br>
+                <textarea name="address" id="address" cols="30" rows="4" class="form-input"></textarea>
+            </div>
+
+        <input type="button" value="ລົງທະບຽນ" onclick="call_address()" class="button-register"><br>
+        <span class="text">ມີບັນຊີແລ້ວ! <a href="form-login.html">ເຂົ້າສູ່ລະບົບ</a></span>
+
+        </div>
+        </form>
+    </div>
+
+    <script>
+        function call_address(){
+         var address = document.getElementById('address').value;
+         console.log(address);
+         alert(address);
+    }
+    </script>
+
+</body>
+</html>
